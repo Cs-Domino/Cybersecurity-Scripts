@@ -1,0 +1,6 @@
+# Disable Sticky Keys shortcut
+Set-ItemProperty -Path "HKCU:\Control Panel\Accessibility\StickyKeys" -Name "Flags" -Value 506
+
+# Optional: disable ToggleKeys/FilterKeys similarly
+Set-ItemProperty -Path "HKCU:\Control Panel\Accessibility\ToggleKeys" -Name "Flags" -Value 0
+Set-ItemProperty -Path "HKCU:\Control Panel\Accessibility\FilterKeys" -Name "Flags" -Value 0
